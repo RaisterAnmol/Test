@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Training Session Study Material</title>
+    <link rel="stylesheet" href="allstudy.css">
+</head>
+
+<body>
+
+<header>
+
+<section>
+<div class="heading">
+
+<h1 class="marquee" id="top">
+<span>All the Study Material or Things I Learned This Week</span>
+</h1>
+
+<h2 class="marquee" id="main-section">
+<span>1st Day: All the Syntax for GitHub</span>
+</h2>
+
+</div>
+</section>
+
+
+<section>
+
+<div class="git-intro">
+
+<h3>What is Git Bash?</h3>
+
+<p>
+Git is a version control system used by developers to track changes in code,
+manage different versions, and collaborate with others on projects.
+</p>
+
+<p>
+Git Bash is a command-line tool for Windows that allows you to use Git commands
+and Linux-style terminal commands in one place.
+</p>
+
+<p>
+We use Git Bash in our daily development work to manage files and repositories.
+It helps developers create repositories on GitHub, create branches, and work
+on different features without affecting the main project.
+Multiple developers can work on different branches and later merge their
+changes into the main branch safely.
+</p>
+
+</div>
+
+</section>
+
+</header>
+
+
+
+<section>
+
+<div class="config">
+
+<h4>
+To configure Git Bash in our coding environment like VS Code,
+we can use the following steps:
+</h4>
+
+
+<div class="step">
+
+<h4>
+Step 1: First download Git for your system using this link:
+<a href="https://git-scm.com/install/windows" target="_blank">
+Download Git for Windows
+</a>
+</h4>
+
+</div>
+
+
+
+<div class="step">
+
+<h4>
+Step 2: Open Git Bash and enter the following commands to setup Git.
+</h4>
+
+<ul id="git-config">
+
+<li>
+<b>git config --global user.name "Your Name"</b> :
+Sets your username (same as your GitHub username).
+</li>
+
+<li>
+<b>git config --global user.email "youremail@gmail.com"</b> :
+Sets your email (same as your GitHub account email).
+</li>
+
+<li>
+<b>git config --list</b> :
+Checks whether the configuration was completed successfully.
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="setup-vscode">
+
+<h3>How to Setup Git in VS Code</h3>
+
+
+<div class="step">
+
+<h4>
+Step 3: Create a folder on your system (example: Test.git)
+</h4>
+
+</div>
+
+
+
+<div class="step">
+
+<h4>
+Step 4: Open the folder in VS Code and run the following commands in the terminal.
+</h4>
+
+<ul>
+
+<li>
+<b>git init</b> :
+Initializes a repository inside the folder.
+</li>
+
+<li>
+<b>git clone repository_url</b> :
+Downloads an existing repository from GitHub.
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="step">
+
+<h4>
+Step 5: Git File Stages
+</h4>
+
+<ul>
+
+<li>
+<b>git status</b> :
+Shows the current project status of all files.
+</li>
+
+<li>
+<b>Stage 1 – Untracked</b> :
+Git does not know about the file yet.
+</li>
+
+<li>
+<b>Stage 2 – Staged</b> :
+File is ready to be committed.
+<br>
+Command: <b>git add filename</b>
+<br>
+Example: <b>git add index.html</b>
+<br>
+Add all files: <b>git add .</b>
+</li>
+
+<li>
+<b>Stage 3 – Modified</b> :
+File was committed before but changed again.
+</li>
+
+<li>
+<b>Stage 4 – Commit</b> :
+Changes are permanently saved in repository history.
+<br>
+Command: <b>git commit -m "descriptive message"</b>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="step">
+
+<h4>
+Step 6: Check History and Changes
+</h4>
+
+<ul>
+
+<li>
+<b>git log</b> :
+Shows complete commit history with commit IDs.
+</li>
+
+<li>
+<b>git show commitID</b> :
+Shows changes made in a specific commit.
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="step">
+
+<h4>
+Step 7: Create a new repository on GitHub.
+</h4>
+
+</div>
+
+
+
+<div class="step">
+
+<h4>
+Step 8: Connect Local Repository to GitHub Repository
+</h4>
+
+<ul>
+
+<li>
+<b>git remote add origin repoURL</b> :
+Connects local repository to GitHub.
+</li>
+
+<li>
+<b>git remote -v</b> :
+Shows connected repositories.
+</li>
+
+<li>
+<b>git remote remove origin</b> :
+Disconnects the repository.
+</li>
+
+<li>
+<b>git push origin main</b> :
+Uploads files to GitHub repository.
+</li>
+
+<li>
+<b>git push origin branch-name</b> :
+Pushes code to a specific branch.
+</li>
+
+<li>
+<b>git pull origin main</b> :
+Downloads latest changes from GitHub.
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="step">
+
+<h4>
+Step 9: Creating Branches
+</h4>
+
+<ul>
+
+<li>
+<b>git branch</b> :
+Shows list of branches.
+</li>
+
+<li>
+<b>git branch branchName</b> :
+Creates a new branch.
+</li>
+
+<li>
+<b>git checkout branchName</b> :
+Switches to another branch.
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="step">
+
+<h4>
+Step 10: Merge Branches
+</h4>
+
+<ul>
+
+<li>
+<b>git merge branchName</b> :
+Merge another branch into current branch.
+</li>
+
+<li>
+<b>git merge --abort</b> :
+Abort merge if conflict occurs.
+</li>
+
+</ul>
+
+
+<h5>Merge Conflict Example</h5>
+
+<p>
+If two branches change the same code location,
+Git will show something like this:
+</p>
+
+<pre><code>
+<<<<<<< HEAD
+Your current branch code
+=======
+Other branch code
+>>>>>>> feature-branch
+</code></pre>
+
+<p>
+After fixing the conflict:
+</p>
+
+<ul>
+
+<li><b>git add filename</b></li>
+<li><b>git commit</b></li>
+
+</ul>
+
+</div>
+
+
+</div>
+</div>
+
+</section>
+
+
+<h2>
+Using these steps you can create, modify, and upload files to your GitHub account.
+</h2>
+
+
+</body>
+</html>
